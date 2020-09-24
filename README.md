@@ -1,6 +1,3 @@
-在上一篇推文，我们介绍了如何修改一个Card的Firmware，在这篇推文我们会介绍如何创建一个Card模块的硬件。
-如果你想知道目前都有哪些可以使用的Card模块，可以点击链接获取列表。
-
 In the last post, we introduced how to modify and create the firmware of a Card. In this post, we will introduce how to create the hardware of a Card module.
 If you want to know which Card modules are currently available, you can click the [link](http://docs.longan-labs.cc/cards-system-summary/) to get the list.
 
