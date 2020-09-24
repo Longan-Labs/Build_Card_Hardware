@@ -9,27 +9,28 @@ If you want to know which Card modules are currently available, you can click th
 
 # Download a template
 
-We provide a template of Eagle files to help you to develop quickly. You can click the link to download the template.
+We provide a template of Eagle files to help you to develop quickly. You can click the [link](https://github.com/Longan-Labs/Build_Card_Hardware/archive/master.zip) to download the template.
 
-Open the template and you can see that the basic part of the schematic has been completed. You only need to add the components you need in the blank part on the left.
+Open the template and you'll find that the basic part of the schematic has been completed. You only need to add the components you need in the blank part on the left.
 
-// Insert picture
+![](https://raw.githubusercontent.com/Longan-Labs/Build_Card_Hardware/master/images/shc_card.jpg)
 
 
 # How to design
 
 In the schematic diagram, you can see a device called U1, which is the smallest system module of a single-chip microcomputer. The available interfaces are as follows:
 
-// Insert picture
 * I2C x 1
 * UART x 1
 * SPI x 1
 * Analog input x 2
 * Digital Input/Output x 2
 
-If you choose an I2C interface, you only need to connect the device's I2C to DSDA/DSCL. Similarly, if you choose a UART/SPI or Analog Input device, you only need to connect to the corresponding interface.
+![](https://raw.githubusercontent.com/Longan-Labs/Build_Card_Hardware/master/images/card_core.jpg)
 
-In addition, you need to pay attention to the power supply. If the device you are using is 3.3V, you need to connect the VCC of U1 to 3V3 of U1, otherwise you can connect to 5V
+If you use an I2C interface, please connect the I2C of the device to DSDA/DSCL. Similarly, for others interfaces, such as UART/SPI or Analog Input device, do the same things.
+
+In addition, you should pay attention to the power supply. If the device you are using is 3.3V, you need to connect the VCC of U1 to 3V3 of U1, otherwise you can connect it to 5V
 
 
 # one example
@@ -37,7 +38,7 @@ In addition, you need to pay attention to the power supply. If the device you ar
 In order to prove that it is not difficult to create a Card module, here we take BME280 as an example to design a BME280 Card.
 BME280 is a temperature, humidity and pressure sensor.
 
-// insert a picture
+![](https://raw.githubusercontent.com/Longan-Labs/Build_Card_Hardware/master/images/bme280card.jpg)
 
 As you can see, we put in a BME280 chip, and made some simple connections, and we are done.
-You can download Eagle File of BME280 Card for more information
+You can download Eagle File of BME280 Card for more information.
